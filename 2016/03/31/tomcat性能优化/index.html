@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  
+  <title>tomcat性能优化 | 笔记</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="description" content="tomcat相关的内容">
+<meta name="keywords" content="tomcat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tomcat性能优化">
+<meta property="og:url" content="https://www.chenpf.xin/2016/03/31/tomcat性能优化/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="tomcat相关的内容">
+<meta property="og:updated_time" content="2017-04-21T09:33:42.530Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tomcat性能优化">
+<meta name="twitter:description" content="tomcat相关的内容">
+  
+    <link rel="alternative" href="/atom.xml" title="笔记" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  
+      <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
+  
+  
+      <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+      <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: true,
+      }
+  </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
+  
+      <script>
+          var _hmt = _hmt || [];
+          (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?1945a4916bc20e4a8d139e44acf429f5";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+          })();
+      </script>
+  
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">PengFei.Chen</a></h1>
+        </hgroup>
+
+        
+        
+        <form><input type="text" class="search" placeholder=" Search..."></form>
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:cpf929@gmail.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://cpf929.github.io/" title="GitHub"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Git/" style="font-size: 10px">Git</a> <a href="/tags/Hexo/" style="font-size: 20px">Hexo</a> <a href="/tags/Linux/" style="font-size: 10px">Linux</a> <a href="/tags/Sublime/" style="font-size: 10px">Sublime</a> <a href="/tags/jenkins/" style="font-size: 10px">jenkins</a> <a href="/tags/mysql/" style="font-size: 10px">mysql</a> <a href="/tags/tomcat/" style="font-size: 10px">tomcat</a> <a href="/tags/文章/" style="font-size: 10px">文章</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">程序猿</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">PengFei.Chen</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">PengFei.Chen</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:cpf929@gmail.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://cpf929.github.io/" title="GitHub"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-tomcat性能优化" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/31/tomcat性能优化/" class="article-date">
+      <time datetime="2016-03-31T07:00:00.000Z" itemprop="datePublished">2016-03-31</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        <h1 class="article-title" itemprop="name">
+      tomcat性能优化
+    </h1>
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tomcat/">tomcat</a></li></ul>
+    </div>
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>tomcat相关的内容<br><a id="more"></a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>tomcat的安装，一般从官网下载绿色版，直接解压就可以。<h2 id="启动参数优化"><a href="#启动参数优化" class="headerlink" title="启动参数优化"></a>启动参数优化</h2></li>
+<li>常见的内存溢出有以下两种:<br>java.lang.OutOfMemoryError: PermGen space<br>java.lang.OutOfMemoryError: Java heap space<h3 id="PermGen-space"><a href="#PermGen-space" class="headerlink" title="PermGen space"></a>PermGen space</h3></li>
+<li>java.lang.OutOfMemoryError: PermGen space<br>PermGen space的全称是Permanent Generation space,是指内存的永久保存区域,这块内存主要是被JVM存放Class和Meta信息的,Class在被Loader时就会被放到PermGen space中,它和存放类实例(Instance)的Heap区域不同,GC(Garbage Collection)不会在主程序运行期对PermGen space进行清理，所以如果你的应用中有很多CLASS的话,就很可能出现PermGen space错误,这种错误常见在web服务器对JSP进行pre compile的时候。如果你的WEB APP下都用了大量的第三方jar, 其大小超过了jvm默认的大小(4M)那么就会产生此错误信息了。</li>
+<li>建议：将相同的第三方jar文件移置到tomcat/shared/lib目录下，这样可以达到减少jar 文档重复占用内存的目的。<h3 id="heap-space"><a href="#heap-space" class="headerlink" title="heap space"></a>heap space</h3></li>
+<li>java.lang.OutOfMemoryError: Java heap space<br>JVM堆的设置是指java程序运行过程中JVM可以调配使用的内存空间的设置.JVM在启动的时候会自动设置Heap size的值，其初始空间(即-Xms)是物理内存的1/64，最大空间(-Xmx)是物理内存的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等选项可进行设置。Heap size 的大小是Young Generation 和Tenured Generaion 之和。</li>
+<li>提示：在JVM中如果98％的时间是用于GC且可用的Heap size 不足2％的时候将抛出此异常信息。</li>
+<li>提示：Heap Size 最大不要超过可用物理内存的80％，一般的要将-Xms和-Xmx选项设置为相同，而-Xmn为1/4的-Xmx值。 </li>
+<li><p>修改tomcat目录下面，bin目录下面的catalina.sh，在cygwin=false之前添加下面内容:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">JAVA_OPTS=<span class="string">"-server -Dfile.encoding=UTF-8 -Xms1024m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m -Xverify:none -Djava.net.preferIPv4Stack=true -XX:+AggressiveOpts -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Djava.awt.headless=true"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>-server, 因为tomcat默认是以一种叫java –client的模式来运行的，server即意味着你的tomcat是以真实的production环境运行，可以有更高的性能</p>
+</li>
+<li>-Xms–Xmx, 一定要设置成相等的，否则内存大小在两个值中间变动时，会造成系统卡顿。</li>
+<li>-Djava.awt.headless=true<br>这个参数一般我们都是放在最后使用的，这全参数的作用是这样的，有时我们会在我们的J2EE工程中使用一些图表工具如：jfreechart，用于在web网页输出GIF/JPG等流，在winodws环境下，一般我们的app server在输出图形时不会碰到什么问题，但是在linux/unix环境下经常会碰到一个exception导致你在winodws开发环境下图片显示的好好可是在linux/unix下却显示不出来，因此加上这个参数以免避这样的情况出现。<h2 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h2></li>
+<li><p>修改server.xml中Connector标签</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">executor</span>=<span class="string">"tomcatThreadPool"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span></span></div><div class="line">   <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span> </div><div class="line">   <span class="attr">enableLookups</span>=<span class="string">"false"</span> <span class="attr">disableUploadTimeout</span>=<span class="string">"true"</span></div><div class="line">   <span class="attr">URIEncoding</span>=<span class="string">"UTF-8"</span> <span class="attr">compression</span>=<span class="string">"on"</span> <span class="attr">compressionMinSize</span>=<span class="string">"2048"</span></div><div class="line"> <span class="attr">compressableMimeType</span>=<span class="string">"text/html,text/xml,text/javascript,text/css,text/plain"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>URIEncoding=”UTF-8”<br>避免url中包含中文，导致后面拿到的结果乱码</p>
+</li>
+<li>executor=”tomcatThreadPool”<br>使用tomcat线程池，需要将上面的Executor标签的注释去掉</li>
+<li>enableLookups<br>关闭dns查询</li>
+<li>compression<br>对响应进行gzip压缩，在客户端请求网页后，从服务器端将网页文件压缩，再下载到客户端，由客户端的浏览器负责解压缩并浏览。<h2 id="使用Apr插件"><a href="#使用Apr插件" class="headerlink" title="使用Apr插件"></a>使用Apr插件</h2></li>
+<li>APR(Apache Portable Runtime)是一个高可移植库，它是Apache HTTP Server 2.x的核心。使用tomcat Native原生库。</li>
+<li>从apache官网下载apr和apr-util的压缩包。</li>
+<li><p>解压apr-1.5.2.tar.gz，切换到该目录下，依次执行<br>./configure;make;make install</p>
+</li>
+<li><p>解压apr-util，切换到该目录</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --with-apr=/usr/<span class="built_in">local</span>/apr ; make; make install;</div></pre></td></tr></table></figure>
+<ul>
+<li>切换到tomcat的bin目录下面，解压tomcat-native.tar.gz文件<br>然后切换到tomcat-native-1.1.33-src/jni/native，依次执行</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --with-apr=/usr/<span class="built_in">local</span>/apr;make;make install</div></pre></td></tr></table></figure>
+<ul>
+<li><p>修改catalina.sh, 在cygwin=false之前加上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CATALINA_OPTS=<span class="string">"<span class="variable">$CATALINA_OPTS</span> -Djava.library.path=/usr/local/apr/lib"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>如果启动报错，org.apache.tomcat.jni.Error: 70023: This function has not been implemented on this platform，是因为没有配置ssl， 可以在server.xml中将SSLEngine改为off</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--APR library loader. Documentation at /docs/apr.html --&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">Listener</span> <span class="attr">className</span>=<span class="string">"org.apache.catalina.core.AprLifecycleListener"</span> <span class="attr">SSLEngine</span>=<span class="string">"off"</span> /&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>查看catalina.out输出，如果看到如下信息，且无异常，则说明配置成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">信息: Starting ProtocolHandler [&quot;http-apr-8080&quot;]</div><div class="line">三月 31, 2016 5:52:23 下午 org.apache.coyote.AbstractProtocol start</div><div class="line">信息: Starting ProtocolHandler [&quot;ajp-apr-8009&quot;]</div><div class="line">三月 31, 2016 5:52:23 下午 org.apache.catalina.startup.Catalina start</div><div class="line">信息: Server startup in 1312 ms</div></pre></td></tr></table></figure>
+</li>
+</ul>
+      
+    </div>
+    
+  </div>
+  
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/31/tomcat性能优化/">tomcat性能优化</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">PengFei.Chen</a></p>
+        <p><span>发布时间:</span>2016-03-31, 15:00:00</p>
+        <p><span>最后更新:</span>2017-04-21, 17:33:42</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/31/tomcat性能优化/" title="tomcat性能优化">https://www.chenpf.xin/2016/03/31/tomcat性能优化/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://www.chenpf.xin/2016/03/31/tomcat性能优化/　　作者: PengFei.Chen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/03/12/mysql相关/">
+                    mysql相关
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/06/13/jenkins安装配置/">
+                    jenkins安装配置
+                </a>
+            </div>
+        
+    </nav>
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动参数优化"><span class="toc-number">2.</span> <span class="toc-text">启动参数优化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PermGen-space"><span class="toc-number">2.1.</span> <span class="toc-text">PermGen space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#heap-space"><span class="toc-number">2.2.</span> <span class="toc-text">heap space</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置优化"><span class="toc-number">3.</span> <span class="toc-text">配置优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用Apr插件"><span class="toc-number">4.</span> <span class="toc-text">使用Apr插件</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    
+        <section class="youyan" id="comments">
+  <div id="uyan_frame"></div>
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2092477"></script>
+</section>
+    
+
+
+<div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/03/12/mysql相关/" title="上一篇: mysql相关">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/06/13/jenkins安装配置/" title="下一篇: jenkins安装配置">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/21/linux/">linux</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/20/生命是一场幻觉/">生命是一场幻觉，而你是我的光</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/13/jenkins安装配置/">jenkins安装配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/31/tomcat性能优化/">tomcat性能优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/12/mysql相关/">mysql相关</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/20/SublimeText使用/">Sublime使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/20/git的使用/">git的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/20/linux/">linux相关</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/01/01/hello-world/">Hello World</a></li></ul>
+
+
+    <script>
+        
+    </script></div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 PengFei.Chen
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit">本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
+<script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+    <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>

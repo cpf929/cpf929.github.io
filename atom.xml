@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>笔记</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.chenpf.xin/"/>
+  <updated>2017-04-21T09:47:38.657Z</updated>
+  <id>https://www.chenpf.xin/</id>
+  
+  <author>
+    <name>PengFei.Chen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.chenpf.xin/2017/04/21/linux/"/>
+    <id>https://www.chenpf.xin/2017/04/21/linux/</id>
+    <published>2017-04-21T09:47:38.655Z</published>
+    <updated>2017-04-21T09:47:38.657Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>linux</title></head><body><article class="markdown-body">cannot convert markdown</article></body></html>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;style&gt;@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>生命是一场幻觉，而你是我的光</title>
+    <link href="https://www.chenpf.xin/2016/12/20/%E7%94%9F%E5%91%BD%E6%98%AF%E4%B8%80%E5%9C%BA%E5%B9%BB%E8%A7%89/"/>
+    <id>https://www.chenpf.xin/2016/12/20/生命是一场幻觉/</id>
+    <published>2016-12-20T07:30:25.000Z</published>
+    <updated>2017-04-21T09:33:42.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>一年前，或者是更久的日子之前，我被自己困在时间的孤岛，我自言自语说我等待你，沧海桑田也等待你。<br><a id="more"></a></p>
+<p>湖泊伪装成天空，命运扮演作旅程，浮尘掩盖了爱情的真相，阳光也欺骗我单一的触觉。于是我决意要盲目，就算看不到每天清晨露珠含泪中升起的朝阳，就算看不到青苔掩映中蔷薇的绽放，就算看不到北风呼啸着带来晶莹的雪花，就算看不到流星，雾霭，彩虹，极光。</p>
+<p>我宁愿想象，想象你的眉目，你的笑容，你的低声私语，你神情忧伤时故作的嘴角轻扬。 </p>
+<p>你的眼神深邃，瞳仁漆黑，在深夜里亦有着柔和光亮。你在黑夜中凝视我的目光，让我看到了石头开花，向日葵在月光下不再枯萎，金鱼在逆流的河水中游得欢畅。</p>
+<p>你的心是曼陀罗和玫瑰开遍的城堡，多情处缱绻婉转，清醒时棱角分明。你对这世间有着辽远的理想，你清醒自若，淡泊如菊。你行走在我不可知的道路上，温柔敦厚却又骨感峥嵘。你是这样的令人欢喜，让我青了眉黛，软了腰肢，黑了长发，到了最美丽的岁月来等待你。</p>
+<p>你曾经握着我的手对我说要一直这样走下去。曾经，多美的一个词。让我误以为时光悄然凝固，不曾想到现世的物是人非。你已经离去，我却停留在时光的原地。</p>
+<p>曾经呵，欲语笑微微，春秋几度。</p>
+<p>何故何故，心绪倾潮难覆。</p>
+<p>谁还记得，是谁先说永远的爱我；是谁站在我的身后，默然陪我看天桥下的车水马龙。是谁，教会我岁月静好，现世安稳这样令人心驰神往的句子，让我记忆离乱之时却还能些许的忆起过往的素年锦时。</p>
+<p>这些都已经不重要，你离开我已经一年的时光。并不是生离死别，却是漠然退出。</p>
+<p>如同玫瑰离开极北的酷寒之地，苍鹰飞离乱石横生的山岗，鲜衣怒马的少年仗剑江湖，扬鞭飞奔出破败的村庄。你不必留恋我，我不须苛责你。因着我已经不能温暖你，而你也不会关怀我。</p>
+<p>多少次我试图走近你都发现是徒劳。你是青铜方鼎上篆刻的铭文，你是古老旗袍上镌绣的水墨画。你存活在遥远的时空之中，神秘而又令人向往。</p>
+<p>多少次我试图忘记你亦是徒劳。你是清冷月光下探丸取命的刺客，你是烟雾缭绕中静燃犀角的阴阳师，你存活在我记忆的最原始的荒原，可淡不可忘。</p>
+<p>多年之前，我驻足在你迁徙过的水泽，你是随季节而安的候鸟，栖水而立的英姿黯淡了岸边的垂杨。</p>
+<p>多年之前，我喝下你杯中停留的酒，你是寂寞忧伤的诗人，茕然立于花下，怅然低吟：落花人独立，微雨燕双飞。</p>
+<p>多年之前，我就记得你的模样。</p>
+<p>你是烟花肆意绽放时的盛大明媚，我是尽头零落渺小的瞬间光亮。你是茫然深海中坚贞矗立的灯塔，我是在彼岸盛开没有来路也没有归途的花。</p>
+<p>你因期待而告别，因爱而受苦。我发誓我要追随于你，你却迷失在鲜艳的理想之中。</p>
+<p>月光死了，诗人死了，爱情死了。凤凰不再涅槃，风信子不再重生。你是守护水仙的神祗，不爱黎明曙光，不爱山林苍莽，却爱上水中的自己。一切最终源于虚妄，归于虚妄。</p>
+<p>我还能有怎样的幻想？我唯独只相信时间残忍，可以带走一切最初的模样，你的模样，我的模样。</p>
+<p>我这样荼蘼不醒的过活，怎么样都还是一样。</p>
+<p>下辈子愿做樱花碾落成泥土，愿做游鱼泅渡冰冷刺骨的深海，愿做白头翁断翅悲鸣，愿做骆驼刺在风沙中孤独终生。</p>
+<p>唯愿得与你相见。等待某天樱花落满你的肩头，等待某天翘首看到你远洋的轮渡，等待某天鸣叫着在你居住的上空盘旋，等待某天奄奄一息遇见在沙漠中行走的你，而你微微颔首，低下沉稳的额。</p>
+<p>生命不过是一场幻觉，可是我要你在。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一年前，或者是更久的日子之前，我被自己困在时间的孤岛，我自言自语说我等待你，沧海桑田也等待你。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="文章" scheme="https://www.chenpf.xin/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="文章" scheme="https://www.chenpf.xin/tags/%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins安装配置</title>
+    <link href="https://www.chenpf.xin/2016/06/13/jenkins%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>https://www.chenpf.xin/2016/06/13/jenkins安装配置/</id>
+    <published>2016-06-13T09:00:00.000Z</published>
+    <updated>2017-04-21T09:33:42.525Z</updated>
+    
+    <content type="html"><![CDATA[<p>主要包括jenkins的安装以及相关配置和使用。<br><a id="more"></a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>从<a href="https://jenkins.io/" target="_blank" rel="external">官网</a>下载LTS Release版本的war包(当前版本1.651.2)，直接部署到tomcat容器(7.0.69)即可。启动后如图所示：<br><img src="http://7xsj41.com1.z0.glb.clouddn.com/jenkins_start.jpg" alt="首次启动"></li>
+</ul>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>包括tomcat配置和Jenkins配置</p>
+<h3 id="tomcat配置"><a href="#tomcat配置" class="headerlink" title="tomcat配置"></a>tomcat配置</h3><ul>
+<li>Jenkins建议使用utf-8编码，所以配置tomcat的connector，添加URIEncoding=”UTF-8”</li>
+<li>tomcat内存调整，防止内存溢出。参考<a href="http://cpf929.github.io/2016/03/31/%E5%B7%A5%E5%85%B7/tomcat%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" target="_blank" rel="external">tomcat优化</a>.</li>
+<li>要把tomcat参数<strong>JAVA_OPTS中关于gc的部分删掉</strong>，否则会报错。例如：<a href="https://issues.jenkins-ci.org/browse/JENKINS-6602" target="_blank" rel="external">CLONE -Builds fail with FATAL: null</a></li>
+</ul>
+<h3 id="jenkins配置"><a href="#jenkins配置" class="headerlink" title="jenkins配置"></a>jenkins配置</h3><h4 id="用户权限-Configure-Global-Security"><a href="#用户权限-Configure-Global-Security" class="headerlink" title="用户权限(Configure Global Security)"></a>用户权限(Configure Global Security)</h4><ul>
+<li>点击左侧的系统管理，然后点击Configure Global Security。保存后，系统管理中就会出现管理用户菜单，并且右上角有登录注册链接.配置为如图所示：<br><img src="http://7xsj41.com1.z0.glb.clouddn.com/Security.jpg" alt="Configure Global Security"></li>
+</ul>
+<ul>
+<li>点击右上角注册，输入相关信息。然后系统管理，重新进入Configure Global Security，取消勾选允许用户注册，授权策略改为项目矩阵授权策略，并在添加用户/组中，添加刚才注册的用户，保存。防止其他用户注册。如图：<br><img src="http://7xsj41.com1.z0.glb.clouddn.com/jenkins_user.jpg" alt="权限"></li>
+</ul>
+<h4 id="系统设置"><a href="#系统设置" class="headerlink" title="系统设置"></a>系统设置</h4><ul>
+<li>Maven Configuration<br>两个settings  provider选择settings file in system。file path 指定到maven的settings.xml文件,如：/maven/conf/settings.xml</li>
+<li>JDK<br>点击JDK安装，分别指定JDK别名和JAVA_HOME，指向系统的JDK路径</li>
+<li>Maven<br>点击maven安装，指定maven别名，MAVEN_HOME指向系统maven的根目录</li>
+<li>Maven项目配置<br>全局MAVEN_OPTS ： maven的参数，如启动内存大小等，可忽略.<br>Local Maven Repository:  下载的jar的存放路径，默认为/root.m2/repository，可以在maven的settings.xml中指定到其他目录</li>
+<li>Jenkins Location<br>Jenkins URL : jenkins的管理地址，即tomcat的访问地址+jenkins<br>系统管理员邮件地址 :  发送邮件的账户，<strong>必须配置，否则下面配置邮件服务器时，发送邮件会认证失败</strong>.</li>
+<li>邮件服务器配置.</li>
+</ul>
+<h4 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h4><p>系统管理，插件管理</p>
+<ul>
+<li>Deploy to container Plugin<br>部署war包到容器.</li>
+<li>Email Extension Plugin<br>邮件扩展，来代替自带的邮件服务配置，安装之后，再进行上面的邮件服务器配置。如图：<br><img src="http://7xsj41.com1.z0.glb.clouddn.com/jenkins_email.jpg" alt="jenkins邮件"></li>
+</ul>
+<h2 id="项目构建"><a href="#项目构建" class="headerlink" title="项目构建"></a>项目构建</h2><p>点击左侧新建，选择构建一个maven项目，输入item名称</p>
+<ul>
+<li>源码管理.<br>输入项目地址Repository URL，用户名密码。</li>
+<li>构建触发器<br>选择Poll SCM，日程表为空即可， 每次构建时手动触发。</li>
+<li>Build<br>Root POM: pom.xml，保持默认即可，如果找不到，会报错<br>Goals and options: mvn打包命令,如：clean package -Pproduction</li>
+<li>增加构建后操作步骤<br>部署， Deploy war/ear to a container<br>WAR/EAR files ： war包的目录，target/name.war，target前没有/<br>Context path : 项目名称，为空，即为war包的名称<br>如图<br><img src="http://7xsj41.com1.z0.glb.clouddn.com/jenkins_deploy.jpg" alt="deploy">  </li>
+<li>增加构建后操作步骤, Editable Email Notification<br>保持默认即可， 可以添加trigger， 以及通知developers的邮件地址，也可以在系统设置里面配置相关的trigger，和收件人地址。</li>
+</ul>
+<h2 id="构建部署"><a href="#构建部署" class="headerlink" title="构建部署"></a>构建部署</h2><p>相关构建部署的操作可以在页面上查看，以及相关的输出， 和日志，构建结果</p>
+<ul>
+<li>remote 部署，jenkins执行remote主机上面的sh脚本时， 无法拿到远程主机的环境变量。 解决方法：在文件开头的注释加上 –login<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/bin/bash --login</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>参考<a href="http://feihu.me/blog/2014/env-problem-when-ssh-executing-command-on-remote/" target="_blank" rel="external">executing-command-on-remote</a></p>
+<ul>
+<li>jenkins shell重启本地tomcat， 无效， 原因，jenkins 会杀死衍生进程<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sleep 5</div><div class="line">BUILD_ID=dontKillMe</div><div class="line">bash /opt/gh2/scripts/business_restart.sh</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/ProcessTreeKiller" target="_blank" rel="external">参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要包括jenkins的安装以及相关配置和使用。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="jenkins" scheme="https://www.chenpf.xin/tags/jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tomcat性能优化</title>
+    <link href="https://www.chenpf.xin/2016/03/31/tomcat%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <id>https://www.chenpf.xin/2016/03/31/tomcat性能优化/</id>
+    <published>2016-03-31T07:00:00.000Z</published>
+    <updated>2017-04-21T09:33:42.530Z</updated>
+    
+    <content type="html"><![CDATA[<p>tomcat相关的内容<br><a id="more"></a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>tomcat的安装，一般从官网下载绿色版，直接解压就可以。<h2 id="启动参数优化"><a href="#启动参数优化" class="headerlink" title="启动参数优化"></a>启动参数优化</h2></li>
+<li>常见的内存溢出有以下两种:<br>java.lang.OutOfMemoryError: PermGen space<br>java.lang.OutOfMemoryError: Java heap space<h3 id="PermGen-space"><a href="#PermGen-space" class="headerlink" title="PermGen space"></a>PermGen space</h3></li>
+<li>java.lang.OutOfMemoryError: PermGen space<br>PermGen space的全称是Permanent Generation space,是指内存的永久保存区域,这块内存主要是被JVM存放Class和Meta信息的,Class在被Loader时就会被放到PermGen space中,它和存放类实例(Instance)的Heap区域不同,GC(Garbage Collection)不会在主程序运行期对PermGen space进行清理，所以如果你的应用中有很多CLASS的话,就很可能出现PermGen space错误,这种错误常见在web服务器对JSP进行pre compile的时候。如果你的WEB APP下都用了大量的第三方jar, 其大小超过了jvm默认的大小(4M)那么就会产生此错误信息了。</li>
+<li>建议：将相同的第三方jar文件移置到tomcat/shared/lib目录下，这样可以达到减少jar 文档重复占用内存的目的。<h3 id="heap-space"><a href="#heap-space" class="headerlink" title="heap space"></a>heap space</h3></li>
+<li>java.lang.OutOfMemoryError: Java heap space<br>JVM堆的设置是指java程序运行过程中JVM可以调配使用的内存空间的设置.JVM在启动的时候会自动设置Heap size的值，其初始空间(即-Xms)是物理内存的1/64，最大空间(-Xmx)是物理内存的1/4。可以利用JVM提供的-Xmn -Xms -Xmx等选项可进行设置。Heap size 的大小是Young Generation 和Tenured Generaion 之和。</li>
+<li>提示：在JVM中如果98％的时间是用于GC且可用的Heap size 不足2％的时候将抛出此异常信息。</li>
+<li>提示：Heap Size 最大不要超过可用物理内存的80％，一般的要将-Xms和-Xmx选项设置为相同，而-Xmn为1/4的-Xmx值。 </li>
+<li><p>修改tomcat目录下面，bin目录下面的catalina.sh，在cygwin=false之前添加下面内容:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">JAVA_OPTS=<span class="string">"-server -Dfile.encoding=UTF-8 -Xms1024m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m -Xverify:none -Djava.net.preferIPv4Stack=true -XX:+AggressiveOpts -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Djava.awt.headless=true"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>-server, 因为tomcat默认是以一种叫java –client的模式来运行的，server即意味着你的tomcat是以真实的production环境运行，可以有更高的性能</p>
+</li>
+<li>-Xms–Xmx, 一定要设置成相等的，否则内存大小在两个值中间变动时，会造成系统卡顿。</li>
+<li>-Djava.awt.headless=true<br>这个参数一般我们都是放在最后使用的，这全参数的作用是这样的，有时我们会在我们的J2EE工程中使用一些图表工具如：jfreechart，用于在web网页输出GIF/JPG等流，在winodws环境下，一般我们的app server在输出图形时不会碰到什么问题，但是在linux/unix环境下经常会碰到一个exception导致你在winodws开发环境下图片显示的好好可是在linux/unix下却显示不出来，因此加上这个参数以免避这样的情况出现。<h2 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h2></li>
+<li><p>修改server.xml中Connector标签</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">executor</span>=<span class="string">"tomcatThreadPool"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span></span></div><div class="line">   <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span> </div><div class="line">   <span class="attr">enableLookups</span>=<span class="string">"false"</span> <span class="attr">disableUploadTimeout</span>=<span class="string">"true"</span></div><div class="line">   <span class="attr">URIEncoding</span>=<span class="string">"UTF-8"</span> <span class="attr">compression</span>=<span class="string">"on"</span> <span class="attr">compressionMinSize</span>=<span class="string">"2048"</span></div><div class="line"> <span class="attr">compressableMimeType</span>=<span class="string">"text/html,text/xml,text/javascript,text/css,text/plain"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>URIEncoding=”UTF-8”<br>避免url中包含中文，导致后面拿到的结果乱码</p>
+</li>
+<li>executor=”tomcatThreadPool”<br>使用tomcat线程池，需要将上面的Executor标签的注释去掉</li>
+<li>enableLookups<br>关闭dns查询</li>
+<li>compression<br>对响应进行gzip压缩，在客户端请求网页后，从服务器端将网页文件压缩，再下载到客户端，由客户端的浏览器负责解压缩并浏览。<h2 id="使用Apr插件"><a href="#使用Apr插件" class="headerlink" title="使用Apr插件"></a>使用Apr插件</h2></li>
+<li>APR(Apache Portable Runtime)是一个高可移植库，它是Apache HTTP Server 2.x的核心。使用tomcat Native原生库。</li>
+<li>从apache官网下载apr和apr-util的压缩包。</li>
+<li><p>解压apr-1.5.2.tar.gz，切换到该目录下，依次执行<br>./configure;make;make install</p>
+</li>
+<li><p>解压apr-util，切换到该目录</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --with-apr=/usr/<span class="built_in">local</span>/apr ; make; make install;</div></pre></td></tr></table></figure>
+<ul>
+<li>切换到tomcat的bin目录下面，解压tomcat-native.tar.gz文件<br>然后切换到tomcat-native-1.1.33-src/jni/native，依次执行</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure --with-apr=/usr/<span class="built_in">local</span>/apr;make;make install</div></pre></td></tr></table></figure>
+<ul>
+<li><p>修改catalina.sh, 在cygwin=false之前加上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CATALINA_OPTS=<span class="string">"<span class="variable">$CATALINA_OPTS</span> -Djava.library.path=/usr/local/apr/lib"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>如果启动报错，org.apache.tomcat.jni.Error: 70023: This function has not been implemented on this platform，是因为没有配置ssl， 可以在server.xml中将SSLEngine改为off</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--APR library loader. Documentation at /docs/apr.html --&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">Listener</span> <span class="attr">className</span>=<span class="string">"org.apache.catalina.core.AprLifecycleListener"</span> <span class="attr">SSLEngine</span>=<span class="string">"off"</span> /&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>查看catalina.out输出，如果看到如下信息，且无异常，则说明配置成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">信息: Starting ProtocolHandler [&quot;http-apr-8080&quot;]</div><div class="line">三月 31, 2016 5:52:23 下午 org.apache.coyote.AbstractProtocol start</div><div class="line">信息: Starting ProtocolHandler [&quot;ajp-apr-8009&quot;]</div><div class="line">三月 31, 2016 5:52:23 下午 org.apache.catalina.startup.Catalina start</div><div class="line">信息: Server startup in 1312 ms</div></pre></td></tr></table></figure>
+</li>
+</ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;tomcat相关的内容&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="tomcat" scheme="https://www.chenpf.xin/tags/tomcat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql相关</title>
+    <link href="https://www.chenpf.xin/2016/03/12/mysql%E7%9B%B8%E5%85%B3/"/>
+    <id>https://www.chenpf.xin/2016/03/12/mysql相关/</id>
+    <published>2016-03-12T07:00:00.000Z</published>
+    <updated>2017-04-21T09:33:42.528Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>网上的方法互相抄袭，可以参考官网的方法</p>
+<ul>
+<li>使用yum<br><a href="http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/" target="_blank" rel="external">mysql-yum-quick-guide</a></li>
+<li>使用源文件安装<br><a href="http://dev.mysql.com/doc/refman/5.6/en/binary-installation.html" target="_blank" rel="external">参考官网5.6安装指导</a></li>
+</ul>
+<a id="more"></a>
+<h2 id="用户授权"><a href="#用户授权" class="headerlink" title="用户授权"></a>用户授权</h2><ul>
+<li>创建用户<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">create user username@'%' identified by 'password';</div><div class="line">#创建了可以在任意地址登录的用户</div><div class="line">grant all privileges on databasename.* to username@'%' with grant option;</div><div class="line">#给用户授权某个数据库的权限，with grant options，带有授权的权限即也可以该用户也可以给其他用户授权</div><div class="line">flush privileges;</div><div class="line">#上面的执行之后可能在localhost不能登录，需要重新创建一个在localhost登录的。</div><div class="line">create user username@'localhost' identified by 'password';</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="数据data目录迁移"><a href="#数据data目录迁移" class="headerlink" title="数据data目录迁移"></a>数据data目录迁移</h2><ul>
+<li>停用mysql服务<br>service mysqld stop<br>或者mysqladmin -u root -p shutdown </li>
+<li><p>修改/etc/my.cnf，[mysqld]下面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">datadir=/data/mysql</div><div class="line">socket=/data/mysql/mysql.sock</div><div class="line"><span class="built_in">log</span>-error=/data/mysql/<span class="built_in">log</span>/mysqld.log</div></pre></td></tr></table></figure>
+</li>
+<li><p>同时也要修改[mysql]下面的，否则虽然正常启动，但是登录会报错。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[mysql]</div><div class="line">socket=/data/mysql/mysql.sock</div></pre></td></tr></table></figure>
+</li>
+<li><p>将/var/lib/mysql目录移动到新的数据目录</p>
+</li>
+</ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;网上的方法互相抄袭，可以参考官网的方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用yum&lt;br&gt;&lt;a href=&quot;http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/&quot;&gt;mysql-yum-quick-guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;使用源文件安装&lt;br&gt;&lt;a href=&quot;http://dev.mysql.com/doc/refman/5.6/en/binary-installation.html&quot;&gt;参考官网5.6安装指导&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="https://www.chenpf.xin/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime使用</title>
+    <link href="https://www.chenpf.xin/2015/12/20/SublimeText%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.chenpf.xin/2015/12/20/SublimeText使用/</id>
+    <published>2015-12-20T07:30:25.000Z</published>
+    <updated>2017-04-21T09:33:42.512Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="配置，安装插件"><a href="#配置，安装插件" class="headerlink" title="配置，安装插件"></a>配置，安装插件</h2><ol>
+<li>常用的package，以及配置，参考<a href="https://github.com/cpf929/Users.git" target="_blank" rel="external">Users目录的配置文件</a></li>
+</ol>
+<a id="more"></a>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ol>
+<li>可以直接打开图片</li>
+<li>Goto Anything功能 — 快速查找（ctrl + P）<ul>
+<li>输入@+函数名可以快速找到函数。</li>
+<li>输入#+文本可以快速进行文件内文本匹配</li>
+<li>在打开文件夹的情况下，输入文件名，可以模糊匹配包含对应字符的文件。</li>
+<li>在打开文件夹的情况下，文件名 + ：+ 行号，跳转到对应的行， 文件名 + @ 可以跳转到对应的代码段</li>
+</ul>
+</li>
+</ol>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>快捷键一般都可以在ST的菜单中找到。</p>
+<ol>
+<li>快速复制当前行 CTRL + SHIFT + D</li>
+<li>删除当前行 CTRL + SHIFT + K</li>
+</ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;配置，安装插件&quot;&gt;&lt;a href=&quot;#配置，安装插件&quot; class=&quot;headerlink&quot; title=&quot;配置，安装插件&quot;&gt;&lt;/a&gt;配置，安装插件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;常用的package，以及配置，参考&lt;a href=&quot;https://github.com/cpf929/Users.git&quot;&gt;Users目录的配置文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Sublime" scheme="https://www.chenpf.xin/categories/Sublime/"/>
+    
+      <category term="编辑器" scheme="https://www.chenpf.xin/categories/Sublime/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+    
+      <category term="Sublime" scheme="https://www.chenpf.xin/tags/Sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git的使用</title>
+    <link href="https://www.chenpf.xin/2015/12/20/git%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.chenpf.xin/2015/12/20/git的使用/</id>
+    <published>2015-12-20T07:30:25.000Z</published>
+    <updated>2017-04-21T09:33:42.519Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="git的使用"><a href="#git的使用" class="headerlink" title="git的使用"></a>git的使用</h1><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ul>
+<li>配置可以通过gui工具进行。</li>
+<li>git config –list 查看所有配置</li>
+<li>git config user.name 查看用户名。</li>
+</ul>
+<a id="more"></a>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ul>
+<li><strong>git init</strong> 在目录中初始化仓库，使用git管理。<br>初始化仓库之后， 可以git remote add [shortname] [url]，添加到远程仓库中。<blockquote>
+<p>git remote add cpf <a href="https://github.com/cpf929/test.git" target="_blank" rel="external">https://github.com/cpf929/test.git</a></p>
+</blockquote>
+</li>
+<li><strong>git clone</strong> 克隆仓库的命令格式为 <code>git clone [url]</code></li>
+<li>文件跟踪和更新到仓库</li>
+</ul>
+<p>工作目录下面的所有文件都不外乎这两种状态：已跟踪或未跟踪。已跟踪的文件是指本来就被纳入版本控制管理的文件，在上次快照中有它们的记录，工作一段时间后，它们的状态可能是未更新，已修改或者已放入暂存区。而所有其他文件都属于未跟踪文件。它们既没有上次更新时的快照，也不在当前的暂存区域。初次克隆某个仓库时，工作目录中的所有文件都属于已跟踪文件，且状态为未修改。</p>
+<p>git文件状态变化周期.</p>
+<p><img src="http://7xsj41.com2.z0.glb.clouddn.com/git.png" alt=""></p>
+<ul>
+<li><strong>git status</strong> 查看文件状态</li>
+<li><strong>git add</strong> 跟踪文件(把文件放入暂存区，文件处于暂存状态)<br>根据目标文件的状态不同，此命令的效果也不同：可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等</li>
+<li><strong>git diff</strong><br>比较的是工作目录中当前文件和暂存区域快照之间的差异，也就是修改之后还没有暂存起来的变化内容。<br>若要看已经暂存起来的文件和上次提交时的快照之间的差异，使用 <code>git diff --staged</code>。</li>
+<li><strong>git commit</strong> 提交暂存区的文件。<br>git commit -m ‘注释’<br>git commit -a 把所有已经跟踪过的文件暂存起来一并提交，从而跳过 <code>git add</code> 步骤</li>
+<li><strong>git rm [filename]</strong> 从暂存区和工作空间中移除文件。<br>git rm –cached readme.txt, 只从暂存区移除，而保留在工作空间。</li>
+<li><p><strong>重命名</strong> <code>git mv from_name to_name</code><br>相当于执行了三条命令。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mv from_name to_name</div><div class="line">git rm from_name</div><div class="line">git add to_name</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>git log</strong> 显示日志<br>git log -p -2 , <code>-p</code> 选项展开显示每次提交的内容差异，用 <code>-2</code> 则仅显示最近的两次更新</p>
+</li>
+</ul>
+<h3 id="撤销操作。"><a href="#撤销操作。" class="headerlink" title="撤销操作。"></a>撤销操作。</h3><ul>
+<li>修改上次的提交.<br>有时候我们提交完了才发现漏掉了几个文件没有加，或者提交信息写错了。想要撤消刚才的提交操作，可以使用 <code>--amend</code> 选项重新提交.<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git commit -m &apos;initial commit&apos;</div><div class="line">git add forgotten_file </div><div class="line">git commit --amend</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>上面的三条命令最终只是产生一个提交，第二个提交命令修正了第一个的提交内容。</p>
+<ul>
+<li><strong>git reset HEAD fileName</strong> 取消暂存的文件。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout --filename 撤销工作区文件的修改</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><ul>
+<li>查看远程仓库<br>git remote -v ，查看远程仓库和克隆的地址</li>
+<li>添加远程仓库<br>git remote add [shortname] [url]<br>现在可以用[shortname]代替远程地址。如： git fetch [shortname]</li>
+<li>从远程仓库抓取数据<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch [remote-name]</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>会到远程仓库中拉取所有你本地仓库中还没有的数据或更新，只是拉取数据，但是并不自动合并到当前工作分支，</p>
+<ul>
+<li>推送数据到远程仓库<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push [remote-name] [branch-name]</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>克隆操作会自动使用默认的 master 和 origin 名字,所以可以直接git push</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;git的使用&quot;&gt;&lt;a href=&quot;#git的使用&quot; class=&quot;headerlink&quot; title=&quot;git的使用&quot;&gt;&lt;/a&gt;git的使用&lt;/h1&gt;&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;配置可以通过gui工具进行。&lt;/li&gt;
+&lt;li&gt;git config –list 查看所有配置&lt;/li&gt;
+&lt;li&gt;git config user.name 查看用户名。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://www.chenpf.xin/categories/Git/"/>
+    
+      <category term="Hexo" scheme="https://www.chenpf.xin/categories/Git/Hexo/"/>
+    
+    
+      <category term="Git" scheme="https://www.chenpf.xin/tags/Git/"/>
+    
+      <category term="Hexo" scheme="https://www.chenpf.xin/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux相关</title>
+    <link href="https://www.chenpf.xin/2015/12/20/linux/"/>
+    <id>https://www.chenpf.xin/2015/12/20/linux/</id>
+    <published>2015-12-20T07:30:25.000Z</published>
+    <updated>2017-04-21T10:05:51.424Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><p>修改RedHat的yum源<br>下载163或者阿里的yum配置文件</p>
+<blockquote>
+<p>wget  <a href="http://mirrors.163.com/.help/CentOS6-Base-163.repo" target="_blank" rel="external">http://mirrors.163.com/.help/CentOS6-Base-163.repo</a><br>替换CentOS-Base-163.repo中 $releaserver 参数为对应的centos版本，如6， 使用vi 的替换功能.<br>:%s/$releaserver/6/g<br>yum makecache<br>yum install yum-fastestmirror 安装fastestmirror插件可自动选择最快的yum 源</p>
+<a id="more"></a>
+</blockquote>
+</li>
+<li><p>unkown host ，无法ping通外网<br>修改 <em>/etc/resolv.conf</em> 文件，添加<strong>nameserver</strong>配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nameserver 8.8.8.8</div><div class="line">nameserver 114.114.114.114</div></pre></td></tr></table></figure>
+</li>
+<li><p>开放端口<br>修改 <em>/etc/sysconfig/iptables</em> 文件，复制22端口的那一行，修改成对应的端口号</p>
+<blockquote>
+<p>-A INPUT -m state –state NEW -m tcp -p tcp –dport 22 -j ACCEPT</p>
+</blockquote>
+</li>
+<li><p>tomcat 启动时报错，<code>java.net.UnknownHostException: dev-01: dev-01</code><br>修改 /etc/hosts, 127.0.0.1 后面增加 对应的hostname</p>
+<blockquote>
+<p>127.0.0.1   localhost localhost.localdomain dev-01</p>
+</blockquote>
+</li>
+<li><p>jenkins执行remote主机上面的sh脚本。<br>无法拿到远程主机的环境变量。 解决方法：在文件开头的注释加上 –login#!/bin/bash –login<br><a href="http://feihu.me/blog/2014/env-problem-when-ssh-executing-command-on-remote/" target="_blank" rel="external">参考</a></p>
+</li>
+<li><p>sed 替换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sed -i &apos;s/java -jar/$JAVA_HOME\/bin\/java -jar/g&apos; `find /opt/ -name &quot;test.sh&quot;`</div></pre></td></tr></table></figure>
+</li>
+<li><p>jenkins shell重启本地tomcat.<br>无效， 原因，jenkins 会杀死衍生进程<br><a href="https://wiki.jenkins-ci.org/display/JENKINS/ProcessTreeKiller" target="_blank" rel="external">https://wiki.jenkins-ci.org/display/JENKINS/ProcessTreeKiller</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sleep 5</div><div class="line">BUILD_ID=dontKillMe</div><div class="line">bash /opt/gh2/scripts/business_restart.sh</div></pre></td></tr></table></figure>
+</li>
+<li><p>CentOS/RHEL 修改主机名<br>查看<br>hostnamectl status<br>修改<br>hostnamectl –static set-hostname 名字</p>
+</li>
+<li><p>bash记录所有用户的历史记录<br>编辑/etc/bashrc（centos）或/etc/bash.bashrc(debian),增加：<br>export PROMPT_COMMAND=’{ msg=$(history 1 | { read x y; echo $y; });logger “[euid=$(whoami)]”:$(who am i):[<code>pwd</code>]”$msg”; }’<br>service rsyslog restart</p>
+</li>
+<li>创建组， 用户权限<br>组<br>groupadd dev<br>useradd -g dev cpf<br>passwd cpf<br>用户列表文件：/etc/passwd<br>用户组列表文件：/etc/group<br>查看系统中有哪些用户：cut -d : -f 1 /etc/passwd<br>查看可以登录系统的用户：cat /etc/passwd | grep -v /sbin/nologin | cut -d : -f 1<br>查看用户操作：w命令(需要root权限)<br>查看某一用户：w 用户名<br>查看登录用户：who<br>查看用户登录历史记录：last</li>
+<li>修改目录所属用户和组<br>chown -R cpf.dev tomcat2/</li>
+<li>磁盘<br>查看 fdisk –l<br>fdisk /dev/vdb<br>输入n 进行分区, 分区类型选 p， 分区个数默认， 柱面默认， 输入w 写入分区表<br>格式化分区,如果创建的是主分区；<br>mkfs -t ext3 /dev/vdb1</li>
+<li>tomcat启动缓慢，创建随机数速度慢<br>修改$JAVA_HOME/jre/lib/security/java.security,<br>替换securerandom.source=file:/dev/random 为：securerandom.source=file:/dev/./urandom ， 注意/./</li>
+<li>find中 -mtime 中的参数n<br>find . –mtime n中的n指的是24<em>n, +n、-n、n分别表示：<br>+n： 大于n，-n:    小于n，n：等于n<br>但是man find里这样的解释还是比较令人费解的，不如直接看find . -mtime 中的用法<br>find . –mtime n:  File waslast modified n</em>24 hours ago.<br>最后一次修改发生在距离当前时间n<em>24小时至(n+1)</em>24 小时<br>find . –mtime +n:<br>最后一次修改发生在n+1天以前，距离当前时间为(n+1)<em>24小时或者更早<br>find . –mtime –n:<br>最后一次修改发生在n天以内，距离当前时间为n</em>24小时以内</li>
+<li>awk<br>awk默认分割符是空格或制表符。<br>cut命令不能在分割符是空格的字符串中截取列，只能是制表符或具体的分割符。<br>cut [选项] 文件<br>awk ‘条件1{动作1} 条件2{动作2} …’ 文件名<br>awk ‘{print $1}’ 文件名<br><code>awk &#39;{if ( $1 &gt; 10 ){ print $1} }&#39;</code></li>
+<li>网络监控工具<br>   iftop,  iptraf-ng</li>
+<li>root 删除文件  Operation not permitted<br>lsattr 1.txt<br>——i—— 1.txt<br>在lsattr命令下，这个1.txt文件带有一个”i”的属性，所以才不可以删除<br>chattr -i 1.txt<br>chattr +i filename 加上保护</li>
+</ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;修改RedHat的yum源&lt;br&gt;下载163或者阿里的yum配置文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wget  &lt;a href=&quot;http://mirrors.163.com/.help/CentOS6-Base-163.repo&quot;&gt;http://mirrors.163.com/.help/CentOS6-Base-163.repo&lt;/a&gt;&lt;br&gt;替换CentOS-Base-163.repo中 $releaserver 参数为对应的centos版本，如6， 使用vi 的替换功能.&lt;br&gt;:%s/$releaserver/6/g&lt;br&gt;yum makecache&lt;br&gt;yum install yum-fastestmirror 安装fastestmirror插件可自动选择最快的yum 源&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://www.chenpf.xin/categories/Linux/"/>
+    
+      <category term="Hexo" scheme="https://www.chenpf.xin/categories/Linux/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://www.chenpf.xin/tags/Hexo/"/>
+    
+      <category term="Linux" scheme="https://www.chenpf.xin/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://www.chenpf.xin/2015/01/01/hello-world/"/>
+    <id>https://www.chenpf.xin/2015/01/01/hello-world/</id>
+    <published>2014-12-31T16:00:00.000Z</published>
+    <updated>2017-04-21T09:33:42.521Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
